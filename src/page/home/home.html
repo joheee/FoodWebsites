@@ -7,22 +7,17 @@
 
     <link rel="stylesheet" href="../../../index.css" />
     <link rel="stylesheet" href="../../components/parallax/parallax.css" />
+    <script
+      type="module"
+      src="../../components/navigation/navigation.js"
+    ></script>
+    <script type="module" src="../../components/footer/footer.js"></script>
+    <script type="module" src="../../components/parallax/parallax.js"></script>
   </head>
   <body>
     <nav></nav>
     <main>
-      <div class="parallax-container">
-        <!-- <div class="parallax-title">VKellog's</div> -->
-        <div class="parallax-title">Lambda</div>
-        <div class="parallax-image-container">
-          <div class="parallax-image-dark-layer"></div>
-          <img
-            class="parallax-image"
-            src="../../../assets/home-background.jpg"
-            alt=""
-          />
-        </div>
-      </div>
+      <div id="parallax-component-container"></div>
     </main>
     <footer></footer>
   </body>
@@ -31,9 +26,4 @@
     src="https://kit.fontawesome.com/cda2ecf2f6.js"
     crossorigin="anonymous"
   ></script>
-  <script
-    type="module"
-    src="../../components/navigation/navigation.js"
-  ></script>
-  <script type="module" src="../../components/footer/footer.js"></script>
 </html>
