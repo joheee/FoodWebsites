@@ -11,14 +11,18 @@ document.head.appendChild(link);
 let recipesContainer = document.getElementsByClassName(
   "popular-recipes-card-container"
 )[0];
-Recipes.forEach((r) => {
-  recipesContainer.innerHTML += r.getFoodCardElement();
-});
+if (recipesContainer !== undefined) {
+  Recipes.forEach((r) => {
+    recipesContainer.innerHTML += r.getFoodCardElement();
+  });
+}
 
 // binding food home
 let foodContainer = document.getElementsByClassName(
   "delicious-foods-card-container"
 )[0];
-Foods.forEach((r) => {
-  foodContainer.innerHTML += r.getFoodCardElement();
-});
+if (foodContainer !== undefined) {
+  Foods.forEach((r) => {
+    foodContainer.innerHTML += r.getFoodCardElement();
+  });
+} 
