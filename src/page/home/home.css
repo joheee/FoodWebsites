@@ -1,0 +1,15 @@
+.content-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.content-container {
+  display: grid;
+  gap: 80px;
+}
+
+@media screen and (max-width: 820px) {
+  .content-title {
+    font-size: 24px;
+  }
+}

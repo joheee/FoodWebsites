@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | VKellog's</title>
 
+    <!-- styling -->
     <link rel="stylesheet" href="../../../index.css" />
-    <link rel="stylesheet" href="../../components/parallax/parallax.css" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="../../components/foodCard/foodCard.css" />
+
+    <!-- script -->
     <script
       type="module"
       src="../../components/navigation/navigation.js"
@@ -18,6 +22,22 @@
     <nav></nav>
     <main>
       <div id="parallax-component-container"></div>
+      <div class="content-container">
+        <div id="popular-recipes-container">
+          <div class="content-title">Popular Recipes</div>
+          <div class="popular-recipes-card-container">
+            <div class="card-food-container">
+              <div class="">image</div>
+              <div class="">title</div>
+              <div class="">description</div>
+              <div class="">rating</div>
+            </div>
+          </div>
+        </div>
+        <div id="delicious-foods-container">
+          <div class="content-title">Delicious Foods</div>
+        </div>
+      </div>
     </main>
     <footer></footer>
   </body>
