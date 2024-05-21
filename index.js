@@ -1,1 +1,2 @@
-window.location.href = "./src/page/home/home.html"
+
+window.location.href = "./src/page/home/home.html";

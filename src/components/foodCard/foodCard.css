@@ -5,7 +5,7 @@
   overflow: hidden;
   max-width: 290px;
 }
-.card-content-container{
+.card-content-container {
   padding: 20px;
 }
 .card-food-image-item {
@@ -25,5 +25,10 @@
 
 .popular-recipes-card-container,
 .delicious-foods-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
   margin-top: 20px;
 }
