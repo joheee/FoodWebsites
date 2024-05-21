@@ -1,4 +1,4 @@
-import { FoodCard } from "./foodCard.js";
+import { Foods, Recipes } from "./foodCard.js";
 
 // load css
 const url = "../../components/foodCard/foodCard.css";
@@ -7,15 +7,18 @@ link.rel = "stylesheet";
 link.href = url;
 document.head.appendChild(link);
 
-// logic for binding to home
-const recipesHome = [
-  new FoodCard("waffle.jpg", "Sweet Waffle", ""),
-  new FoodCard("burger.jpg", "Cruncy Burger", ""),
-  new FoodCard("spagetti.jpg", "Aglio Olio Spagetti", ""),
-];
+// binding recipes home
 let recipesContainer = document.getElementsByClassName(
   "popular-recipes-card-container"
 )[0];
-recipesHome.forEach((r) => {
+Recipes.forEach((r) => {
   recipesContainer.innerHTML += r.getFoodCardElement();
+});
+
+// binding food home
+let foodContainer = document.getElementsByClassName(
+  "delicious-foods-card-container"
+)[0];
+Foods.forEach((r) => {
+  foodContainer.innerHTML += r.getFoodCardElement();
 });

@@ -10,9 +10,18 @@
 }
 .card-food-image-item {
   width: 100%;
+  height: 200px; 
+  object-fit: cover;
 }
 .card-content-title {
   font-weight: 600;
+}
+.card-content-desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .card-content-rating-container {
   margin-top: 24px;
@@ -21,14 +30,4 @@
 }
 .fa-star {
   color: yellow;
-}
-
-.popular-recipes-card-container,
-.delicious-foods-card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  margin-top: 20px;
 }

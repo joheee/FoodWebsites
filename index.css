@@ -22,15 +22,7 @@ a:hover {
   font-weight: bold;
 }
 
-.content-container {
-  background-color: white;
-  padding: 80px;
-}
-
 @media screen and (max-width: 820px) {
-  .content-container {
-    padding: 50px;
-  }
   * {
     font-size: 16px;
   }
