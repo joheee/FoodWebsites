@@ -7,17 +7,87 @@
 
     <link rel="stylesheet" href="../../../index.css" />
     <link rel="stylesheet" href="../../components/parallax/parallax.css" />
+    <link rel="stylesheet" href="contact.css" />
     <script
       type="module"
       src="../../components/navigation/navigation.js"
     ></script>
+    <script type="module" src="contact.js"></script>
     <script type="module" src="../../components/footer/footer.js"></script>
     <script type="module" src="../../components/parallax/parallax.js"></script>
+    <script
+      type="module"
+      src="../../components/foodCard/FoodRecipe.js"
+    ></script>
   </head>
   <body>
     <nav></nav>
     <main>
       <div id="parallax-component-container"></div>
+      <div id="popular-recipes-container" class="grid-gap-80">
+        <div class="">
+          <div class="content-title">Get in touch with us!</div>
+          <div class="input-container">
+            <div class="container">
+              <label for="inputField">First name</label>
+              <input
+                class="input-field"
+                type="text"
+                id="firstNameField"
+                placeholder="Type here..."
+              />
+              <p id="firstNameError"></p>
+            </div>
+
+            <div class="container">
+              <label for="inputField">Last name</label>
+              <input
+                class="input-field"
+                type="text"
+                id="lastNameField"
+                placeholder="Type here..."
+              />
+              <p id="lastNameError"></p>
+            </div>
+
+            <div class="container">
+              <label for="inputField">Email Address</label>
+              <input
+                class="input-field"
+                type="text"
+                id="emailAddressField"
+                placeholder="Type here..."
+              />
+              <p id="emailAddressError"></p>
+            </div>
+
+            <div class="container">
+              <label for="inputField">Phone Number</label>
+              <input
+                class="input-field"
+                type="number"
+                id="phoneNumberField"
+                placeholder="Type here..."
+              />
+              <p id="phoneNumberError"></p>
+            </div>
+
+            <div class="container">
+              <label for="inputField">Your message for us</label>
+              <textarea
+                class="input-field"
+                id="yourMessageField"
+                placeholder="Type here..."
+              ></textarea>
+              <p id="yourMessageError"></p>
+            </div>
+
+            <div class="container">
+              <button id="submitButton">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer></footer>
   </body>
